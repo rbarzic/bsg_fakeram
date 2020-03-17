@@ -23,7 +23,7 @@ $(CACTI_BUILD_DIR):
 	mkdir -p $(@D)
 	git clone https://github.com/HewlettPackard/Cacti.git $@
 	cd $@; git checkout 1ffd8dfb10303d306ecd8d215320aea07651e878
-	cd $@; git apply $(TOP_DIR)/patches/cacti.patch
+	cd $@; git apply $(TOP_DIR)/patches/cacti_onio.patch
 	cd $@; make -j4
 
 clean_tools:
